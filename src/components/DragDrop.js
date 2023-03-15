@@ -31,15 +31,22 @@ const [{ isOver }, drop] = useDrop(() => ({
 }));
 
 const addToBoard = (id) => {
+  console.log(id);
     const imageList = ImageList.filter((picture) => id === picture.id);
-    setBoard((board) => [...board, imageList[0]]);
+    //multiple images within the one div
+    setBoard((board) => [...board, imageList[0]]); 
 };
 
   return (
     <>
       <div className="Pictures"> {ImageList.map((picture) => {
-        return <Picture url={picture.url} id={picture.id} />
+        return <Picture url={picture.url} id={picture.id} />;
       })}</div>
+      <div className="Board" ref={drop}>
+        {board.map((picture) => {
+        return <Picture url={picture.url} id={picture.id} />;
+        })}
+      </div>
     </>
   )
 }
