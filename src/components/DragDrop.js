@@ -1,4 +1,4 @@
-import React { useState } from 'react';
+import React, { useState } from 'react';
 import { useDrag } from 'react-dnd';
 import Picture from './Pictures';
 
