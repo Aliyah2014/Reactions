@@ -8,4 +8,4 @@ function DragDrop() {
   )
 }
 
-export default DragDrop
+export default DragDrop;
