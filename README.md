@@ -24,4 +24,6 @@ we started by creating this github repository and deploying it to netlify. From 
 - [ ] iOS and Android Native App using Flutter
 
 # Mockup Design
-![Mockup Design of Reaction](https://github.com/Aliyah2014/Reactions/blob/main/Assets/logo.png?raw=true)
+![Mockup Design of Reactions](https://github.com/Aliyah2014/Reactions/blob/main/Assets/mockup.png?raw=true)
+
+---
