@@ -11,7 +11,7 @@ as creative individuals, we want to use pictures to create a mood board that wil
 
 # Our Workflow
 
-
+we started by creating this github repository and deploying it to netlify. From there we set up react.js and created a file structure that we could easily write to. we then collaborated using live share in visual studio implement the styles and functionalities from apis into our project.
 
 
 # Future Development
