@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useDrag } from 'react-dnd';
+import { useDrop } from 'react-dnd';
 import Picture from './Pictures';
 
 const ImageList = [
