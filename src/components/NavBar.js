@@ -45,10 +45,10 @@ function NavBar() {
             <Button className="WidgetButton rounded-pill m-1" variant="contained" size="lg">+ Widgets
             </Button>
             </label>
-            <input className="UploadButton rounded-pill m-1" variant="contained" size="lg" type="file"
+            <Button className="UploadButton rounded-pill m-1" variant="contained" size="lg" type="file"
         accept="image/*"
         style={{ display: 'none' }}
-        id="contained-button-file">↑ Upload</input>
+        id="contained-button-file">↑ Upload</Button>
             </div>
           </Nav>
         </Navbar.Collapse>
