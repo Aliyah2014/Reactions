@@ -1,8 +1,12 @@
 import React from 'react'
+import CorkImage from '../brand/cork-background.jpg';
 
 function MainBoard() {
   return (
-    <div>
+    <div className="CorkBoard" 
+    style={{ backgroundImage:`url(${CorkImage})`, 
+            backgroundRepeat:"no-repeat",
+            backgroundSize:"cover" }}>
       
     </div>
   )

@@ -11,8 +11,6 @@ function NavBar() {
   return (
     <Navbar expand="lg">
       <Container>
-        {/* Add image rather than text to brand */}
-        {/* <Navbar.Brand href="#home">Reacti😄ns</Navbar.Brand> */}
         <Navbar.Brand href="#home"><img className="BrandLogo" src={Logo} alt="Reactions Brand" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
