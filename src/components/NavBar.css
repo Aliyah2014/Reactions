@@ -4,7 +4,7 @@
 .WidgetButton {
     background-color: #A2A0FF;
     color: #FFFFFF;
-    box-shadow: 5px rgba (0, 0, 0, 41);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
@@ -16,7 +16,7 @@
 .UploadButton {
     background-color: #000000;
     color: white;
-    box-shadow: 5px rgba (0, 0, 0, 41) ;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
