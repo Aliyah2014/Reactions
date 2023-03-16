@@ -44,10 +44,10 @@ function NavBar() {
       <label htmlFor="contained-button-file">
             <Button className="WidgetButton rounded-pill m-1" variant="contained" size="lg">+ Widgets
             </Button>
-            
+            </label>
             <Button className="UploadButton rounded-pill m-1" variant="contained" size="lg" type="file"
         accept="image/*" 
-        id="contained-button-file">↑ Upload</Button></label>
+        id="contained-button-file">↑ Upload</Button><
             </div>
           </Nav>
         </Navbar.Collapse>
