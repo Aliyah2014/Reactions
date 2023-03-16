@@ -12,6 +12,7 @@
 .WidgetButton:hover {
     transform: scale(0.8);
     background-color: #A2A0FF !important;
+    color: white !important;
 }
 
 .UploadButton {
@@ -25,4 +26,5 @@
 .UploadButton:hover {
     transform: scale(0.8);
     background-color: #000000 !important;
+    color: white !important;
 }
