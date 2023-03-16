@@ -27,3 +27,5 @@ we started by creating this github repository and deploying it to netlify. From 
 ![Mockup Design of Reactions](https://github.com/Aliyah2014/Reactions/blob/main/Assets/mockup.png?raw=true)
 
 ---
+
+Netlify Link: <https://lucent-meringue-3cedbf.netlify.app>
