@@ -7,7 +7,7 @@ import Form from 'react-bootstrap/Form';
 import './NavBar.css';
 import Logo from '../brand/brand-logo.png';
 
-function NavBar() {
+function NavBar() => {
   return (
     <Navbar expand="lg">
       <Container>
@@ -68,7 +68,7 @@ function NavBar() {
       </label>
       </div>
     </div>
-  );
+  
    </Nav>
         </Navbar.Collapse>
       </Container>
