@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 // import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import './NavBar.css';
 
 function NavBar() {
   return (
@@ -39,9 +40,9 @@ function NavBar() {
           </Form>
             </div>
             <div className="ButtonDiv">
-            <Button className="rounded-pill m-1" variant="secondary" size="lg">+ Widgets</Button>
+            <Button className="WidgetButton rounded-pill m-1" variant="" size="lg">+ Widgets</Button>
             
-            <Button className="rounded-pill m-1" variant="secondary" size="lg">↑ Upload</Button>
+            <Button className="UploadButton rounded-pill m-1" variant="" size="lg">↑ Upload</Button>
             </div>
           </Nav>
         </Navbar.Collapse>
