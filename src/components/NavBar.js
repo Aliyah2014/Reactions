@@ -47,10 +47,13 @@ function NavBar() {
         id="contained-button-file"
       />
       <label htmlFor="contained-button-file">
-            <Button className="WidgetButton rounded-pill m-1" variant="" size="lg">+ Widgets
-            </Button>
+            <input className="WidgetButton rounded-pill m-1" variant="contained" size="lg" type="file"
+        accept="image/*"
+        style={{ display: 'none' }}
+        id="contained-button-file">+ Widgets
+            </input>
             </label>
-            <Button className="UploadButton rounded-pill m-1" variant="" size="lg">↑ Upload</Button>
+            <Button className="UploadButton rounded-pill m-1" variant="contained" size="lg">↑ Upload</Button>
             </div>
           </Nav>
         </Navbar.Collapse>
