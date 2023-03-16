@@ -1,0 +1,13 @@
+.Board {
+    background-image: url(../brand/cork-background.jpg);
+    /* width: 300px; */
+    width: 100vw;
+    /* height: 500px; */
+    height: 100vh;
+}
+.Pictures {
+    background-image: url(../brand/cork-background.jpg);
+}
+img {
+    margin: 5px;
+}
