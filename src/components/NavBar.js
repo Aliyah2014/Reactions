@@ -46,8 +46,7 @@ function NavBar() {
             </Button>
             
             <input className="UploadButton rounded-pill m-1" variant="contained" size="lg" type="file"
-        accept="image/*"
-        style={{ display: 'none' }}
+        accept="image/*" 
         id="contained-button-file">↑ Upload</input></label>
             </div>
           </Nav>
