@@ -14,7 +14,7 @@ function Pictures({id, url}) {
  ref={drag}
  src={url} 
  width="150px" alt="" 
- style={{border: isDragging ? "5px solid pink" : "0px" }}/>;
+ style={{border: isDragging ? "1px solid grey" : "0px" }}/>;
 }
 
 export default Pictures;
