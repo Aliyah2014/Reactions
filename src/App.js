@@ -3,6 +3,10 @@ import { HTML5Backend } from 'react-dnd-html5-backend';
 import DragDrop from './components/DragDrop';
 import NavBar from './components/NavBar';
 import './App.css';
+import React from 'react';
+import Button from '@material-ui/core/Button';
+import PhotoCamera from '@material-ui/icons/PhotoCamera';
+import IconButton from '@material-ui/core/IconButton';
 
 function App() {
   return (

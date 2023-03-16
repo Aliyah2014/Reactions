@@ -42,12 +42,47 @@ function NavBar() {
             <div className="ButtonDiv">
             <Button className="WidgetButton rounded-pill m-1" variant="" size="lg">+ Widgets</Button>
             
+          
             <Button className="UploadButton rounded-pill m-1" variant="" size="lg">↑ Upload</Button>
             </div>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
+  );
+}
+
+const App = () => {
+ 
+  return (
+    <div style={{
+      display: 'flex',
+      margin: 'auto',
+      width: 400,
+      flexWrap: 'wrap',
+    }}>
+  
+      <input
+        type="file"
+        accept="image/*"
+        style={{ display: 'none' }}
+        id="contained-button-file"
+      />
+      <label htmlFor="contained-button-file">
+        <Button variant="contained" color="primary" component="span">
+          Upload
+        </Button>
+      </label>
+      <h3>  OR  </h3>
+      <input accept="image/*" id="icon-button-file"
+        type="file" style={{ display: 'none' }} />
+      <label htmlFor="icon-button-file">
+        <IconButton color="primary" aria-label="upload picture"
+        component="span">
+          <PhotoCamera />
+        </IconButton>
+      </label>
+    </div>
   );
 }
 
