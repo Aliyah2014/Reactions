@@ -6,6 +6,8 @@
 .Pictures {
     background-image: url(../brand/cork-background.jpg);
 }
-img {
+.ImageShadow {
     margin: 5px;
+    border-radius: 5px;
+    
 }
