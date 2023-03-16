@@ -1,5 +1,5 @@
 .Board {
-    background-image: url(../brand/cork-background.jpg) rgba(0, 0, 0, 0.5);
+    background: url(../brand/cork-background.jpg) rgba(0, 0, 0, 0.5);
     width: 100vw;
     height: 100vh;
     background-blend-mode: multiply;
