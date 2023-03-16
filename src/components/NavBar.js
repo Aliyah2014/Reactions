@@ -50,6 +50,13 @@ function NavBar() {
         accept="image/*" 
         id="contained-button-file">↑ Upload</input></label>  */}
 
+        
+        <input
+        type="file"
+        accept="image/*"
+        style={{ display: 'none' }}
+        id="contained-button-file"
+      />
         <label htmlFor="contained-button-file">
         <Button variant="contained" color="primary" component="span">
           Upload
