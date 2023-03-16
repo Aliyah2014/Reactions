@@ -7,9 +7,7 @@ import Form from 'react-bootstrap/Form';
 import './NavBar.css';
 import Logo from '../brand/brand-logo.png';
 import React from 'react';
-import Button from '@material-ui/core/Button';
-import PhotoCamera from '@material-ui/icons/PhotoCamera';
-import IconButton from '@material-ui/core/IconButton';
+
 
 function NavBar() => {
   return (
