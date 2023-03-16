@@ -1,17 +1,21 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import './NavBar.css';
+import Logo from '../brand/brand-logo.png';
 
-function BasicExample() {
+function NavBar() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar expand="lg">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home"><img className="BrandLogo" src={Logo} alt="Reactions Brand" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            {/* <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">Link</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -23,7 +27,23 @@ function BasicExample() {
               <NavDropdown.Item href="#action/3.4">
                 Separated link
               </NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
+            <div>
+            <Form className="d-flex">
+            <Form.Control
+              type="search"
+              placeholder="🔍"
+              className="mt-2"
+              aria-label="Search"
+            />
+            <Button variant="">Search</Button>
+          </Form>
+            </div>
+            <div className="ButtonDiv">
+            <Button className="WidgetButton rounded-pill m-1" variant="" size="lg">+ Widgets</Button>
+            
+            <Button className="UploadButton rounded-pill m-1" variant="" size="lg">↑ Upload</Button>
+            </div>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -31,4 +51,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default NavBar;

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDrop } from 'react-dnd';
 import Picture from './Pictures';
+import './DragDrop.css'
 
 const ImageList = [
   // use this data fo testing app

@@ -11,10 +11,11 @@ function Pictures({id, url}) {
   }),
  }));
  return <img 
+ className="ImageShadow shadow-lg"
  ref={drag}
  src={url} 
  width="150px" alt="" 
- style={{border: isDragging ? "5px solid pink" : "0px" }}/>;
+ style={{border: isDragging ? "1px solid grey shadow-lg" : "0px" }}/>;
 }
 
 export default Pictures;
