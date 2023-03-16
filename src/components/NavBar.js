@@ -6,10 +6,8 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import './NavBar.css';
 import Logo from '../brand/brand-logo.png';
-import React from 'react';
 
-
-function NavBar() => {
+function NavBar() {
   return (
     <Navbar expand="lg">
       <Container>
@@ -40,55 +38,24 @@ function NavBar() => {
             />
             <Button variant="">Search</Button>
           </Form>
-    <div style={{
-      display: 'flex',
-      margin: 'auto',
-      width: 400,
-      flexWrap: 'wrap',
-    }}>
-  
-      <input
+            </div>
+            <div className="ButtonDiv">
+            <Button className="WidgetButton rounded-pill m-1" variant="" size="lg">+ Widgets
+            <input
         type="file"
         accept="image/*"
         style={{ display: 'none' }}
         id="contained-button-file"
-      />
-      <label htmlFor="contained-button-file">
-      <Button className="WidgetButton rounded-pill m-1" variant="" size="lg">+ Widgets</Button>
-        <div className="ButtonDiv WidgetButton rounded-pill m-1"></div><Button variant="contained" size="lg" color="primary" component="span">
-          ↑ Upload
-        </Button>
-      </label>
-      <h3>  OR  </h3>
-      <input accept="image/*" id="icon-button-file"
-        type="file" style={{ display: 'none' }} />
-      <label htmlFor="icon-button-file">
-        <IconButton color="primary" aria-label="upload picture"
-        component="span">
-          <PhotoCamera />
-        </IconButton>
-        
-      </label>
-      </div>
-    </div>
-  
-   </Nav>
+      /></Button>
+            
+            <Button className="UploadButton rounded-pill m-1" variant="" size="lg">↑ Upload</Button>
+            </div>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    function test() {
-            
-           /* </Navbar.Collapse> </div>
-            <div className="ButtonDiv">
-            <Button className="WidgetButton rounded-pill m-1" variant="" size="lg">+ Widgets</Button>
-            
-          
-            <Button className="UploadButton rounded-pill m-1" variant="" size="lg">↑ Upload</Button>
-            </div>
-         
-  ; */}
+  );
 }
-
 
  
   
