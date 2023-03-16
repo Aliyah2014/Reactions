@@ -40,14 +40,16 @@ function NavBar() {
           </Form>
             </div>
             <div className="ButtonDiv">
-            <Button className="WidgetButton rounded-pill m-1" variant="" size="lg">+ Widgets
-            <input
+              <input
         type="file"
         accept="image/*"
         style={{ display: 'none' }}
         id="contained-button-file"
-      /></Button>
-            
+      />
+      <label htmlFor="contained-button-file">
+            <Button className="WidgetButton rounded-pill m-1" variant="" size="lg">+ Widgets
+            </Button>
+            </label>
             <Button className="UploadButton rounded-pill m-1" variant="" size="lg">↑ Upload</Button>
             </div>
           </Nav>
