@@ -5,13 +5,15 @@ import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import './NavBar.css';
+import Logo from '../brand/brand-logo.png';
 
 function NavBar() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar expand="lg">
       <Container>
         {/* Add image rather than text to brand */}
-        <Navbar.Brand href="#home">Reacti😄ns</Navbar.Brand>
+        {/* <Navbar.Brand href="#home">Reacti😄ns</Navbar.Brand> */}
+        <Navbar.Brand href="#home"><img className="BrandLogo" src={Logo} alt="Reactions Brand" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
