@@ -52,7 +52,8 @@ function NavBar() => {
         id="contained-button-file"
       />
       <label htmlFor="contained-button-file">
-        <div className="ButtonDiv, WidgetButton rounded-pill m-1"></div><Button variant="contained" size="lg" color="primary" component="span">
+      <Button className="WidgetButton rounded-pill m-1" variant="" size="lg">+ Widgets</Button>
+        <div className="ButtonDiv WidgetButton rounded-pill m-1"></div><Button variant="contained" size="lg" color="primary" component="span">
           ↑ Upload
         </Button>
       </label>
