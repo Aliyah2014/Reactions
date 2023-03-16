@@ -64,11 +64,15 @@ function NavBar() {
         component="span">
           <PhotoCamera />
         </IconButton>
-        </div>
+        
       </label>
+      </div>
     </div>
   );
-  
+   </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
     function test() {
             
            /* </Navbar.Collapse> </div>
@@ -78,10 +82,7 @@ function NavBar() {
           
             <Button className="UploadButton rounded-pill m-1" variant="" size="lg">↑ Upload</Button>
             </div>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+         
   ; */}
 }
 
