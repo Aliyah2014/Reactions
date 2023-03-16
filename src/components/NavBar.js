@@ -38,23 +38,6 @@ function NavBar() {
             />
             <Button variant="">Search</Button>
           </Form>
-            </div>
-            <div className="ButtonDiv">
-            <Button className="WidgetButton rounded-pill m-1" variant="" size="lg">+ Widgets</Button>
-            
-          
-            <Button className="UploadButton rounded-pill m-1" variant="" size="lg">↑ Upload</Button>
-            </div>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  );
-}
-
-const App = () => {
- 
-  return (
     <div style={{
       display: 'flex',
       margin: 'auto',
@@ -69,8 +52,8 @@ const App = () => {
         id="contained-button-file"
       />
       <label htmlFor="contained-button-file">
-        <Button variant="contained" color="primary" component="span">
-          Upload
+        <div className="ButtonDiv, WidgetButton rounded-pill m-1"></div><Button variant="contained" size="lg" color="primary" component="span">
+          ↑ Upload
         </Button>
       </label>
       <h3>  OR  </h3>
@@ -81,9 +64,30 @@ const App = () => {
         component="span">
           <PhotoCamera />
         </IconButton>
+        </div>
       </label>
     </div>
   );
+  
+    function test() {
+            
+           /* </Navbar.Collapse> </div>
+            <div className="ButtonDiv">
+            <Button className="WidgetButton rounded-pill m-1" variant="" size="lg">+ Widgets</Button>
+            
+          
+            <Button className="UploadButton rounded-pill m-1" variant="" size="lg">↑ Upload</Button>
+            </div>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  ; */}
 }
+
+
+ 
+  
+
 
 export default NavBar;
