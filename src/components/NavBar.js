@@ -45,10 +45,18 @@ function NavBar() {
             <Button className="WidgetButton rounded-pill m-1" variant="contained" size="lg">+ Widgets
             </Button>
             
-            <label htmlFor="contained-button-file">
+            {/* <label htmlFor="contained-button-file">
             <input className="UploadButton rounded-pill m-1" variant="contained" size="lg" type="file"
         accept="image/*" 
-        id="contained-button-file">↑ Upload</input></label>
+        id="contained-button-file">↑ Upload</input></label>  */}
+
+        <label htmlFor="contained-button-file">
+        <Button variant="contained" color="primary" component="span">
+          Upload
+          
+        </Button>
+        </label>
+
             </div>
           </Nav>
         </Navbar.Collapse>
