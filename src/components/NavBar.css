@@ -4,9 +4,23 @@
 .WidgetButton {
     background-color: #A2A0FF;
     color: #FFFFFF;
+    box-shadow: 5px rgba (0, 0, 0, 41);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
+
+.WidgetButton:hover {
+    transform: scale(0.8);
+}
+
 .UploadButton {
     background-color: #000000;
     color: white;
-    box-shadow: 5px 10px ;
+    box-shadow: 5px rgba (0, 0, 0, 41) ;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.UploadButton:hover {
+    transform: scale(0.8);
 }
