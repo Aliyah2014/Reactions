@@ -52,9 +52,9 @@ class FileUploadButton extends Component {
                 />
                 <button
                   className="UploadButton rounded-pill m-1"
-                   onClick={() => this.refs.fileInput.click()}
+                  onClick={() => this.refs.fileInput.click()}
                 >
-                  Upload
+                  ↑ Upload
                 </button>
               </React.Fragment>
             </div>
@@ -65,73 +65,6 @@ class FileUploadButton extends Component {
   }
 }
 
-{/*
-// function NavBar() {
-  return (
-    <Navbar expand="lg">
-      <Container>
-        <Navbar.Brand href="#home"><img className="BrandLogo" src={Logo} alt="Reactions Brand" /></Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            {/* <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown> 
-            <div>
-            <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="🔍"
-              className="mt-2"
-              aria-label="Search"
-            />
-            <Button variant="">Search</Button>
-          </Form>
-            </div>
-            <div className="ButtonDiv">
-            
-      
-            <Button className="WidgetButton rounded-pill m-1" variant="contained" size="lg">+ Widgets
-            </Button>
-            
-
-                  
-        <input
-          ref="fileInput"
-          onChange={this.handleFileUpload}
-          type="file"
-          style={{ display: "none" }}
-          // multiple={false}
-        />
-        <button className="UploadButton rounded-pill m-1" variant="contained" onClick={() => this.refs.fileInput.click()}>Upload File</button>
-      
-             {/* <label htmlFor="contained-button-file"> */}
-            {/* <input className="UploadButton rounded-pill m-1" variant="contained" size="lg" type="file" accept="image/*" 
-        id="contained-button-file">↑ Upload</input></label>
-
-        
-       
-        
-
-            </div>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-    </React.Fragment>
-  )
-    }  
-*/}
 const rootElement = document.getElementById("root");
 ReactDOM.render(<FileUploadButton />, rootElement);
 
