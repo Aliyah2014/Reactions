@@ -16,16 +16,51 @@ class FileUploadButton extends Component {
 
   render() {
     return (
-      <React.Fragment>
-        <input
-          ref="fileInput"
-          onChange={this.handleFileUpload}
-          type="file"
-          style={{ display: "none" }}
-          // multiple={false}
-        />
-        <button onClick={() => this.refs.fileInput.click()}>Upload File</button>
-      </React.Fragment>
+      <Navbar expand="lg">
+        <Container>
+          <Navbar.Brand href="#home">
+            <img className="BrandLogo" src={Logo} alt="Reactions Brand" />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <div>
+              <Form className="d-flex">
+                <Form.Control
+                  type="search"
+                  placeholder="🔍"
+                  className="mt-2"
+                  aria-label="Search"
+                />
+                <Button variant="">Search</Button>
+              </Form>
+            </div>
+            <div className="ButtonDiv">
+              <Button
+                className="WidgetButton rounded-pill m-1"
+                variant="contained"
+                size="lg"
+              >
+                + Widgets
+              </Button>
+              <React.Fragment>
+                <input
+                  ref="fileInput"
+                  onChange={this.handleFileUpload}
+                  type="file"
+                  style={{ display: "none" }}
+                  // multiple={false}
+                />
+                <button
+                  className="UploadButton rounded-pill m-1"
+                   onClick={() => this.refs.fileInput.click()}
+                >
+                  Upload
+                </button>
+              </React.Fragment>
+            </div>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     );
   }
 }
@@ -33,7 +68,6 @@ class FileUploadButton extends Component {
 {/*
 // function NavBar() {
   return (
-    <React.Fragment>
     <Navbar expand="lg">
       <Container>
         <Navbar.Brand href="#home"><img className="BrandLogo" src={Logo} alt="Reactions Brand" /></Navbar.Brand>
