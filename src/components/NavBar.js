@@ -10,11 +10,28 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
 class FileUploadButton extends Component {
-  handleFileUpload = event => {
+  handleFileUpload = (event) => {
     console.log(event.target.files[0].name);
   };
 
-function NavBar() {
+  render() {
+    return (
+      <React.Fragment>
+        <input
+          ref="fileInput"
+          onChange={this.handleFileUpload}
+          type="file"
+          style={{ display: "none" }}
+          // multiple={false}
+        />
+        <button onClick={() => this.refs.fileInput.click()}>Upload File</button>
+      </React.Fragment>
+    );
+  }
+}
+
+{/*
+// function NavBar() {
   return (
     <React.Fragment>
     <Navbar expand="lg">
@@ -35,7 +52,7 @@ function NavBar() {
               <NavDropdown.Item href="#action/3.4">
                 Separated link
               </NavDropdown.Item>
-            </NavDropdown> */}
+            </NavDropdown> 
             <div>
             <Form className="d-flex">
             <Form.Control
@@ -66,7 +83,7 @@ function NavBar() {
       
              {/* <label htmlFor="contained-button-file"> */}
             {/* <input className="UploadButton rounded-pill m-1" variant="contained" size="lg" type="file" accept="image/*" 
-        id="contained-button-file">↑ Upload</input></label> */ }
+        id="contained-button-file">↑ Upload</input></label>
 
         
        
@@ -79,7 +96,8 @@ function NavBar() {
     </Navbar>
     </React.Fragment>
   )
-    }    
+    }  
+*/}
 const rootElement = document.getElementById("root");
 ReactDOM.render(<FileUploadButton />, rootElement);
 
