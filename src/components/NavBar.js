@@ -36,32 +36,32 @@ class FileUploadButton extends Component {
                 <Button variant="">Search</Button>
               </Form>
             </div>
-            <div className="ButtonDiv">
-              <Button
-                className="WidgetButton rounded-pill m-1"
-                variant="contained"
-                size="lg"
-              >
-                + Widgets
-              </Button>
-              <React.Fragment>
-                <input
-                  ref="fileInput"
-                  onChange={this.handleFileUpload}
-                  type="file"
-                  accept="image/*"
-                  style={{ display: "none" }}
-                  // multiple={false}
-                />
-                <button
-                  className="UploadButton rounded-pill m-1"
-                  onClick={() => this.refs.fileInput.click()}
-                >
-                  ↑ Upload
-                </button>
-              </React.Fragment>
-            </div>
           </Navbar.Collapse>
+          <div className="ButtonDiv">
+            <Button
+              className="WidgetButton rounded-pill m-1"
+              variant="contained"
+              size="lg"
+            >
+              + Widgets
+            </Button>
+            <React.Fragment>
+              <input
+                ref="fileInput"
+                onChange={this.handleFileUpload}
+                type="file"
+                accept="image/*"
+                style={{ display: "none" }}
+                // multiple={false}
+              />
+              <button
+                className="UploadButton rounded-pill m-1"
+                onClick={() => this.refs.fileInput.click()}
+              >
+                ↑ Upload
+              </button>
+            </React.Fragment>
+          </div>
         </Container>
       </Navbar>
     );
