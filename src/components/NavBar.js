@@ -25,6 +25,26 @@ class FileUploadButton extends Component {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item d-flex">
+                <div class="collapse fade" id="searchForm">
+                  <input
+                    id="search"
+                    type="search"
+                    class="form-control border-0 bg-light"
+                    placeholder="search"
+                  />
+                </div>
+                <a
+                  class="nav-link ml-auto"
+                  href="#searchForm"
+                  data-target="#searchForm"
+                  data-toggle="collapse"
+                >
+                  <i class="mdi mdi-magnify"></i>
+                </a>
+              </li>
+            </ul>
             <div>
               <Form className="d-flex">
                 <Form.Control
