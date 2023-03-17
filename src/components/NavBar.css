@@ -35,7 +35,7 @@
     border: 0;
 }
 
-.navbar-light .navbar-toggler-icon {
+.custom-toggler .navbar-light .navbar-toggler-icon {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
