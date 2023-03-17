@@ -30,3 +30,25 @@
     background-color: #000000 !important;
     color: white !important;
 }
+
+.navbar-light .navbar-toggler {
+    border: 0;
+}
+
+.navbar-light .navbar-toggler-icon {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    background-image: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar-light .navbar-toggler-icon:before {
+    content: "\f07b";
+}
+
+.navbar-light .navbar-toggler[aria-expanded=true] .navbar-toggler-icon:before {
+    content: "\f07c";
+}
