@@ -21,6 +21,8 @@
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    padding: 0.6em 0.8em 0.8em 0.8em;
+    border: 0;
 }
 
 .UploadButton:hover {
