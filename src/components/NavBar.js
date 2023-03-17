@@ -61,7 +61,7 @@ function NavBar() {
           style={{ display: "none" }}
           // multiple={false}
         />
-        <button onClick={() => this.refs.fileInput.click()}>Upload File</button>
+        <button className="UploadButton rounded-pill m-1" variant="contained" onClick={() => this.refs.fileInput.click()}>Upload File</button>
       </React.Fragment>
              {/* <label htmlFor="contained-button-file"> */}
             {/* <input className="UploadButton rounded-pill m-1" variant="contained" size="lg" type="file" accept="image/*" 
