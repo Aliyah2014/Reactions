@@ -6,6 +6,13 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import './NavBar.css';
 import Logo from '../brand/brand-logo.png';
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+
+class FileUploadButton extends Component {
+  handleFileUpload = event => {
+    console.log(event.target.files[0].name);
+  };
 
 function NavBar() {
   return (
@@ -45,32 +52,34 @@ function NavBar() {
             <Button className="WidgetButton rounded-pill m-1" variant="contained" size="lg">+ Widgets
             </Button>
             
-            {/* <label htmlFor="contained-button-file">
-            <input className="UploadButton rounded-pill m-1" variant="contained" size="lg" type="file"
-        accept="image/*" 
-        id="contained-button-file">↑ Upload</input></label>  */}
+
+                  <React.Fragment>
+        <input
+          ref="fileInput"
+          onChange={this.handleFileUpload}
+          type="file"
+          style={{ display: "none" }}
+          // multiple={false}
+        />
+        <button onClick={() => this.refs.fileInput.click()}>Upload File</button>
+      </React.Fragment>
+             {/* <label htmlFor="contained-button-file"> */}
+            {/* <input className="UploadButton rounded-pill m-1" variant="contained" size="lg" type="file" accept="image/*" 
+        id="contained-button-file">↑ Upload</input></label> */ }
 
         
-        <input
-        type="file"
-        accept="image/*"
-        style={{ display: 'none' }}
-        id="contained-button-file"
-      />
-        <label htmlFor="contained-button-file">
-        <Button variant="contained" color="primary" component="span">
-          Upload
-          
-        </Button>
-        </label>
+       
+        
 
             </div>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
-  );
+  )
 }
+const rootElement = document.getElementById("root");
+ReactDOM.function(<FileUploadButton />, rootElement);
 
  
   
