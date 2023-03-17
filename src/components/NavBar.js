@@ -52,6 +52,7 @@ class FileUploadButton extends Component {
                   placeholder="🔍"
                   className="mt-2"
                   aria-label="Search"
+                  
                 />
                 <Button variant="">Search</Button>
               </Form>
