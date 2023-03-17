@@ -9,6 +9,8 @@ import Logo from '../brand/brand-logo.png';
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
+export const NavBar = () => {
+  
 class FileUploadButton extends Component {
   handleFileUpload = (event) => {
     console.log(event.target.files[0].name);
@@ -68,8 +70,8 @@ class FileUploadButton extends Component {
 const rootElement = document.getElementById("root");
 ReactDOM.render(<FileUploadButton />, rootElement);
 
-  
+}
   
 
 
-export default NavBar;
+// export default NavBar;
