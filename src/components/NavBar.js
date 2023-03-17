@@ -67,8 +67,8 @@ class FileUploadButton extends Component {
   }
 }
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<FileUploadButton />, rootElement);
+const elem = document.getElementById("menu");
+ReactDOM.render(<FileUploadButton />, elem);
 
 }
   
