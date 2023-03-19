@@ -53,8 +53,8 @@ class FileUploadButton extends Component {
                   className="mt-2"
                   aria-label="Search"
                   
-                />
-                <Button variant="">Search</Button>
+                /> {/* Need to define Submit funtion */}
+                <Button type="submit" onClick={Submit} variant="">Search</Button>
               </Form>
             </div>
           </Navbar.Collapse>
