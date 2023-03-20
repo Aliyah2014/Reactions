@@ -1,10 +1,22 @@
 import React from 'react'
 
-function SearchBox() {
+function SearchBox(props) {
   return (
-    <div>
-      
-    </div>
+    <>
+      <input
+      onChange={props.handleInputChange}
+        className=""
+        type="text"
+        placeholder="Search Images"
+        value={props.img}
+      />
+      <button
+        type="submit"
+        onClick={props.handleFormSubmit}
+        className="btn"
+        >🔍
+      </button>
+    </>
   )
 }
 

@@ -8,6 +8,7 @@ import './NavBar.css';
 import Logo from '../brand/brand-logo.png';
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import SearchBox from './SearchBox.js'
 
 export const NavBar = () => {
   
@@ -46,7 +47,7 @@ class FileUploadButton extends Component {
               </li>
             </ul>
             <div>
-              <Form className="d-flex">
+              {/* <Form className="d-flex">
                 <Form.Control
                   type="search"
                   placeholder="🔍"
@@ -55,7 +56,8 @@ class FileUploadButton extends Component {
                   
                 /> 
                 <Button type="submit" variant="">Search</Button>
-              </Form>
+              </Form> */}
+              <SearchBox />
             </div>
           </Navbar.Collapse>
           <div className="ButtonDiv">
