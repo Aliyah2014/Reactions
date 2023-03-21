@@ -5,6 +5,7 @@ import DragDrop from './components/DragDrop';
 import './App.css';
 import React from 'react';
 import NavBar from './components/navbar1';
+import SearchResults from './components/SearchResults';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <DndProvider backend={HTML5Backend}>
     <div className="App">
     <NavBar />
+    <SearchResults />
       <DragDrop />
         <header className="App-header">
         

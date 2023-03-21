@@ -6,9 +6,11 @@ function SearchBox(props) {
       <input
       onChange={props.handleInputChange}
         className=""
+        name="search"
         type="text"
         placeholder="Search Images"
-        value={props.img}
+        value={props.search}
+        id="search"
       />
       <button
         type="submit"
