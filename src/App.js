@@ -1,5 +1,5 @@
 import React from "react";
-import { DndContext } from "@dnd-kit/core";
+import { closestCenter, DndContext, PointerSensor, useSensor} from "@dnd-kit/core";
 import { useState } from "react";
 
 import NavBar from "./components/navbar1";
@@ -14,9 +14,14 @@ function App() {
   const draggableMarkup = (
     <Draggable>Drag me</Draggable>
   );
-  
+
+  const sensors = useSensor(PointerSensor);
+
   return (
-    <DndContext onDragEnd={handleDragEnd}>
+    <DndContext
+    onDragEnd={handleDragEnd}
+    collisionDetection={closestCenter}
+    >
       {!isDropped ? draggableMarkup : null}
 
 <NavBar />

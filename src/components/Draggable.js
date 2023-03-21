@@ -3,12 +3,15 @@ import { useDraggable } from "@dnd-kit/core";
 import { CSS } from "@dnd-kit/utilities";
 
 export function Draggable(props) {
-  const { attributes, listeners, setNodeRef, transform } = useDraggable({
+  const { attributes, transition, listeners, setNodeRef, transform, isDragging } = useDraggable({
     id: "draggable",
   });
   const style = 
      {
-        transform: CSS.Translate.toString(transform), 
+        transform: CSS.Translate.toString(transform),
+        transition: transition,
+        opacity: isDragging? 0.5 : 1,
+        pointerEvents: isDragging? "none" : "auto", 
       }
     
 
