@@ -1,26 +1,27 @@
-import { DndProvider } from 'react-dnd';
-import { HTML5Backend } from 'react-dnd-html5-backend';
-import DragDrop from './components/DragDrop';
-//import NavBar from './components/NavBar';
-import './App.css';
 import React from 'react';
-import NavBar from './components/navbar1';
-import SearchResults from './components/SearchResults';
+import {DndContext} from '@dnd-kit/core';
 
+import {Draggable} from './Draggable';
+import {Droppable} from './Droppable';
 
 function App() {
-  return (
-    <DndProvider backend={HTML5Backend}>
-    <div className="App">
-    <NavBar />
-    <SearchResults />
-      <DragDrop />
-        <header className="App-header">
-        
-        </header>
-    </div>
-    </DndProvider>
-  );
-}
+    const [isDropped, setIsDropped] = useState(false);
+    const draggableMarkup = (
+        <Draggable>Drag Me</Draggable>
+    )
 
-export default App;
+  return (
+    <DndContext onDragEnd={handleDragEnd}>
+        {!isDropped ? draggableMarkup : null}
+      <Droppable>
+      {!isDropped ? draggableMarkup : 'Drop Here'}
+      </Droppable>
+    </DndContext>
+  );
+
+  function handleDragEnd(event) {
+    if (event.over && event.over.id === 'droppable') {
+        setIsDropped(true);
+    }
+  }
+}

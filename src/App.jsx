@@ -1,8 +1,9 @@
 import React from 'react';
 import {DndContext} from '@dnd-kit/core';
 
-import {Draggable} from './Draggable';
-import {Droppable} from './Droppable';
+import NavBar from './components/navbar1';
+import  Draggable  from './components/Draggable';
+import  Droppable  from './components/Droppable';
 
 function App() {
     const [isDropped, setIsDropped] = useState(false);
@@ -13,6 +14,7 @@ function App() {
   return (
     <DndContext onDragEnd={handleDragEnd}>
         {!isDropped ? draggableMarkup : null}
+        <NavBar />
       <Droppable>
       {!isDropped ? draggableMarkup : 'Drop Here'}
       </Droppable>
@@ -25,3 +27,5 @@ function App() {
     }
   }
 }
+
+export default App;

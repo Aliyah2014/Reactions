@@ -16,5 +16,3 @@ export function Droppable(props) {
     </div>
   );
 }
-
-export default Droppable;
