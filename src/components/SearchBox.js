@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { useState } from "react";
+import './SearchBox.css';
 
 function SearchBox() {
   const [image, setImage] = useState("");
@@ -25,7 +26,7 @@ function SearchBox() {
   };
 
   return (
-    <div>
+    <div className="resultsContainer">
       <div className="input">
         <input
           onChange={handleChange}
@@ -41,7 +42,7 @@ function SearchBox() {
         {result.map((image) => (
           <>
             <div className="card">
-              <img src={image.urls.thumb} alt="" />
+              <img src={image.urls.thumb} alt="unsplash images" />
             </div>
           </>
         ))}
