@@ -57,7 +57,7 @@ class FileUploadButton extends Component {
                 /> 
                 <Button type="submit" variant="">Search</Button>
               </Form> */}
-              <SearchBox />
+              {/* <SearchBox /> */}
             </div>
           </Navbar.Collapse>
           <div className="ButtonDiv">
