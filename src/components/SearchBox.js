@@ -15,7 +15,7 @@ function SearchBox() {
   const handleSubmit = () => {
     console.log(image);
     const url =
-      "https://api.unsplash.com/search/photos?page=1&query=" +
+      "https://api.unsplash.com/search/photos?page=1&5-Total&query=" +
       image +
       "&client_id=" +
       clientId;

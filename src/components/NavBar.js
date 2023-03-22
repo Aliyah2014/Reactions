@@ -8,7 +8,7 @@ import './NavBar.css';
 import Logo from '../brand/brand-logo.png';
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import SearchBox from './SearchBox.js'
+// import SearchBox from './SearchBox.js'
 
 export const NavBar = () => {
   
