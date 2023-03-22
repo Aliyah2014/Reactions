@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
-import { useState } from "react";
-import './SearchBox.css';
+import "./SearchBox.css";
 
 function SearchBox() {
   const [image, setImage] = useState("");
@@ -15,13 +14,21 @@ function SearchBox() {
   const handleSubmit = () => {
     console.log(image);
     const url =
-      "https://api.unsplash.com/search/photos?page=1&5-Total&query=" +
+      "https://api.unsplash.com/search/photos?page=1&query=" +
       image +
       "&client_id=" +
       clientId;
 
     axios.get(url).then((response) => {
       setResult(response.data.results);
+    });
+  };
+
+  const handleDelete = (index) => {
+    setResult((prevResult) => {
+      const updatedResult = [...prevResult];
+      updatedResult.splice(index, 1);
+      return updatedResult;
     });
   };
 
@@ -39,12 +46,11 @@ function SearchBox() {
         </button>
       </div>
       <div className="result">
-        {result.map((image) => (
-          <>
-            <div className="card">
-              <img src={image.urls.thumb} alt="unsplash images" />
-            </div>
-          </>
+        {result.map((image, index) => (
+          <div className="card" key={index}>
+            <button onClick={() => handleDelete(index)}>X</button>
+            <img src={image.urls.thumb} alt="unsplash images" />
+          </div>
         ))}
       </div>
     </div>
@@ -54,5 +60,5 @@ function SearchBox() {
 export default SearchBox;
 
 // TODO:
-// // limit results to 5?
+// limit results to 5?
 // connect to draggable
