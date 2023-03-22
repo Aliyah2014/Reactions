@@ -7,6 +7,7 @@ import Draggable from "./components/Draggable";
 import Droppable from "./components/Droppable";
 // import Picture from "./components/Pictures";
 import "./components/DragDrop.css";
+import SearchBox from "./components/SearchBox";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       {!isDropped ? draggableMarkup : null}
 
 <NavBar />
+<SearchBox />
       <Droppable className="Board">
         {isDropped ? draggableMarkup : 'Drop here'}
       </Droppable>
