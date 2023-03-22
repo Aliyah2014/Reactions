@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+//import {param} from "jquery";
 
 const useAxios = () => {
     const [response, setResponse] = useState([]);
@@ -21,9 +22,9 @@ const useAxios = () => {
     }
     
 
-    useEffect (() => {
-        fetchData(param);
-}, [param])
+//     useEffect (() => {
+//         fetchData(param);
+// }, [param])
 
     return {
         response,
