@@ -2,7 +2,7 @@ import React from 'react'
 
 function ImageResults(props) {
   return (
-    <div>
+    <div className="ResultsContainer">
         console.log("errrr");
       
       {/* <ul className="list-group">

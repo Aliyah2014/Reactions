@@ -13,3 +13,8 @@
     border-radius: 5px;
     
 }
+
+.ResultsContainer {
+    background-image: url(../brand/cork-background.jpg);
+    height: 100px;
+}
