@@ -1,6 +1,6 @@
 .resultsContainer {
     background-image: url(../brand/cork-background.jpg);
-    height: 300px;
+    height: 400px;
     display: flex;
     justify-content: center;
 }
@@ -9,11 +9,15 @@
     position: fixed;
 }
 .result {
+    margin-top: 18px;
     display: grid;
     width: auto;
     height: auto;
     grid-template-columns: auto auto auto auto auto;
     column-gap: 10px;
+}
+.result img {
+    margin: 5px;
 }
 .card {
     height: auto;
