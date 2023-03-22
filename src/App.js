@@ -28,7 +28,7 @@ function App() {
 <NavBar />
 <SearchBox />
       <Droppable className="Board">
-        {isDropped ? draggableMarkup : 'Drop here'}
+        {isDropped ? draggableMarkup : null}
       </Droppable>
     </DndContext>
   );
