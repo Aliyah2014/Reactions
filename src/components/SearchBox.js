@@ -52,3 +52,7 @@ function SearchBox() {
 }
 
 export default SearchBox;
+
+// TODO:
+// // limit results to 5?
+// connect to draggable
