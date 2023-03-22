@@ -47,15 +47,16 @@ class FileUploadButton extends Component {
               </li>
             </ul>
             <div>
-              {/* <Form className="d-flex">
+              {/* <Form action="SearchBox.js" method="GET" className="d-flex">
                 <Form.Control
                   type="search"
+                  name="query"
                   placeholder="🔍"
                   className="mt-2"
                   aria-label="Search"
                   
                 /> 
-                <Button type="submit" variant="">Search</Button>
+                <Button type="submit" variant="handleSubmit">Search</Button>
               </Form> */}
               {/* <SearchBox /> */}
             </div>
@@ -97,5 +98,5 @@ ReactDOM.render(<FileUploadButton />, elem);
 }
   
 
-
+// module.exports = {};
 // export default NavBar;

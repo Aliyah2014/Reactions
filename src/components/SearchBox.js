@@ -3,6 +3,7 @@ import axios from "axios";
 import { useState } from "react";
 import './SearchBox.css';
 
+
 function SearchBox() {
   const [image, setImage] = useState("");
   const clientId = "yQaVo2m8_O3PqSex9PVzUIfmbcx8MeRhqU1-7m7wQEY";
@@ -12,6 +13,7 @@ function SearchBox() {
     setImage(event.target.value);
   };
 
+  
   const handleSubmit = () => {
     console.log(image);
     const url =

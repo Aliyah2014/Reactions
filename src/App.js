@@ -13,7 +13,8 @@ import SearchBox from "./components/SearchBox";
 function App() {
   const [isDropped, setIsDropped] = useState(false);
   const draggableMarkup = (
-    <Draggable>Drag me</Draggable>
+    <Draggable
+    >Drag me</Draggable>
   );
 
   const sensors = useSensor(PointerSensor);
