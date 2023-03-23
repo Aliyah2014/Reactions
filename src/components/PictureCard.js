@@ -6,6 +6,9 @@ function PictureCard(props) {
   
   return (
       <div>
+        <span onClick={() => props.removeFriend(props.id)} className="remove">
+        𝘅
+      </span>
         <div>
           <img 
             src={props.image.urls.thumb}
