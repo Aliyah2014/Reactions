@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import PictureCard from './PictureCard';
 
 function ImageResults(props) {
   const images = props.photList.map((image) => {
