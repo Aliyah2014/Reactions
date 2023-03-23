@@ -48,7 +48,7 @@ function SearchBox() {
       <div className="result">
         {result.map((image, index) => (
           <div className="card" key={index}>
-            <button onClick={() => handleDelete(index)}>X</button>
+            <button onClick={() => handleDelete(index)} className="remove">X</button>
             <img src={image.urls.thumb} alt="unsplash images" />
           </div>
         ))}

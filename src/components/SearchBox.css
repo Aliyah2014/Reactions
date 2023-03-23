@@ -25,6 +25,19 @@
     padding: 10px;
 }
 
+.remove {
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: -10px;
+    right: 1px;
+    cursor: pointer;
+  }
+
+.card > .remove:hover {
+    color: #d50000;
+  }
+
 /* TODO: */
 /* button styling */
 /* search bar styling */
