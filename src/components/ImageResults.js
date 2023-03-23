@@ -1,17 +1,13 @@
 import React from 'react'
 
 function ImageResults(props) {
+  const images = props.photList.map((image) => {
+    return <PictureCard image={image} key={image.id}/>
+  });
+
   return (
     <div className="ResultsContainer">
-        console.log("errrr");
-      
-      {/* <ul className="list-group">
-      {props.results.map(result => (
-        <li className="list-group-item" key={result.id}>
-          <img alt={result.title} className="img-fluid" src={result.images.original.url} />
-        </li>
-      ))}
-    </ul> */}
+        {images}
     </div>
   )
 }
