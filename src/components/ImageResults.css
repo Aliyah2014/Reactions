@@ -1,0 +1,12 @@
+.image-columns {
+    column-width: 250px;
+    column-gap: 1rem;
+  }
+   
+  .image-columns img {
+    padding-top: 1rem;
+  }
+  .ImageList {
+    height: 200px;
+    width: 100vw;
+  }

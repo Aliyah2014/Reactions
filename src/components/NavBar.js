@@ -1,14 +1,10 @@
 import Container from 'react-bootstrap/Container';
-//import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-// import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
-// import Form from 'react-bootstrap/Form';
 import './NavBar.css';
 import Logo from '../brand/brand-logo.png';
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-// import SearchBox from './SearchBox.js'
 
 export const NavBar = () => {
   
@@ -47,17 +43,6 @@ class FileUploadButton extends Component {
               </li>
             </ul>
             <div>
-              {/* <Form className="d-flex">
-                <Form.Control
-                  type="search"
-                  placeholder="🔍"
-                  className="mt-2"
-                  aria-label="Search"
-                  
-                /> 
-                <Button type="submit" variant="">Search</Button>
-              </Form> */}
-              {/* <SearchBox /> */}
             </div>
           </Navbar.Collapse>
           <div className="ButtonDiv">

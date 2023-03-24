@@ -1,76 +1,36 @@
-import React, { useState } from "react";
-// import axios from "axios";
+import React, { useState } from 'react';
 import "./SearchBox.css";
 
 function SearchBox(props) {
 
-  const [search, setSearchText] = useState("");
+  const [searchTerm, setsearchTerm] = useState("");
 
+  // event handlers
   const onFormSubmit = (event) => {
-      event.preventDefault();
-      props.onSubmit(search);
+    event.preventDefault(); // prevents page from refreshing itself
+    props.onSubmit(searchTerm);
   };
 
   const onInputChange = (event) => {
-      setSearchText(event.target.value);
+    setsearchTerm(event.target.value);
   };
 
-  // const [image, setImage] = useState("");
-  // const clientId = "yQaVo2m8_O3PqSex9PVzUIfmbcx8MeRhqU1-7m7wQEY";
-  // const [result, setResult] = useState([]);
+  return (
+    <div className="SearchBar">
+      <div className="ui segment">
+        <form className="ui form" onSubmit={onFormSubmit}>
+          <div className="field">
+            <label>Image Search: </label>
+            <div className="ui icon input">
+              <input type="text" value={searchTerm} onChange={onInputChange} placeholder="Search..." />
+              <i className="search icon"></i>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+};
 
-  // const handleChange = (event) => {
-  //   setImage(event.target.value);
-  // };
-
-  // const handleSubmit = () => {
-  //   console.log(image);
-  //   const url =
-  //     "https://api.unsplash.com/search/photos?page=1&per_page=5&query=" +
-  //     image +
-  //     "&client_id=" +
-  //     clientId;
-
-  //   axios.get(url).then((response) => {
-  //     setResult(response.data.results);
-  //   });
-  // };
-
-  // const handleDelete = (index) => {
-  //   setResult((prevResult) => {
-  //     const updatedResult = [...prevResult];
-  //     updatedResult.splice(index, 1);
-  //     return updatedResult;
-  //   });
-  // };
-
-  // return (
-  //   <div className="resultsContainer">
-  //     <div className="input">
-  //       <input
-  //         onChange={handleChange}
-  //         type="text"
-  //         name="image"
-  //         placeholder="🔍"
-  //       />
-  //       <button onClick={handleSubmit} type="submit">
-  //         Search
-  //       </button>
-  //     </div>
-  //     <div className="result">
-  //       {result.map((image, index) => (
-  //         <div className="card" key={index}>
-  //           <button onClick={() => handleDelete(index)}>X</button>
-  //           <img src={image.urls.thumb} alt="unsplash images" />
-  //         </div>
-  //       ))}
-  //     </div>
-  //   </div>
-  // );
-}
 
 export default SearchBox;
-
-// TODO:
-// limit results to 5?
-// connect to draggable

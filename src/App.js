@@ -5,7 +5,7 @@ import API from './utils/API';
 import NavBar from "./components/navbar1";
 import Draggable from "./components/Draggable";
 import Droppable from "./components/Droppable";
-
+import './App.css';
 import "./components/DragDrop.css";
 import SearchBox from "./components/SearchBox";
 import ImageResults from "./components/ImageResults";
@@ -27,7 +27,7 @@ const onFormSubmit = async (search) => {
 
   const [isDropped, setIsDropped] = useState(false);
   const draggableMarkup = (
-    <Draggable><ImageResults photList={images} /></Draggable>
+    <Draggable className="DraggableContainer"><ImageResults photList={images} /></Draggable>
   );
 
   const sensors = useSensor(PointerSensor);
@@ -56,3 +56,5 @@ const onFormSubmit = async (search) => {
 }
 
 export default App;
+
+
